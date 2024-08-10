@@ -1,0 +1,57 @@
+<!--------f-----------
+
+    Project 4
+    Name: Yash Yash 
+    Date: 09 August,2024
+    Description: The HTML file is designed to create a visually appealing and responsive webpage with a header, navigation, main content area, and footer. It includes form validation using JavaScript to ensure proper user input.
+
+--------------------->
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Contact - Rugged Ridge Ranch Supply Co.</title>
+    <link rel="stylesheet" href="styles.css">
+    <script src="validation.js" defer></script>
+</head>
+<body>
+    <header>
+        <h1>RUGGED RIDGE</h1>
+        <h2>RANCH SUPPLY CO.</h2>
+        <nav>
+            <ul>
+                <li><a href="index.html">Home</a></li>
+                <li><a href="products.html">Products</a></li>
+                <li><a href="contact.html">Contact</a></li>
+            </ul>
+        </nav>
+    </header>
+    <main>
+        <h3>Contact Us</h3>
+        <form id="contactForm">
+            <label for="name">Name:</label>
+            <input type="text" id="name" name="name" required>
+            <label for="phone">Phone Number:</label>
+            <input type="tel" id="phone" name="phone" pattern="[0-9]{10}" required>
+            <label for="email">Email:</label>
+            <input type="email" id="email" name="email" required>
+            <label for="comments">Comments:</label>
+            <textarea id="comments" name="comments" required></textarea>
+            <button type="submit">Submit</button>
+            <button type="reset">Reset</button>
+            <p id="errorMessage" style="display:none;">Please fill out all fields correctly.</p>
+        </form>
+    </main>
+    <footer>
+        <p>Site by Yash & A WEB 1100 project.</p>
+        <nav>
+            <ul>
+                <li><a href="index.html">Home</a></li>
+                <li><a href="products.html">Products</a></li>
+                <li><a href="contact.html">Contact</a></li>
+            </ul>
+        </nav>
+    </footer>
+</body>
+</html>
